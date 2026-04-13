@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dia | Saúde, Cirurgia e Excelência Médica</title>
+    <meta name="description"
+        content="Hospital Dia com foco em cirurgias. Mais de 40 médicos especialistas, 24 especialidades médicas e um bloco cirúrgico completo. Cuidar da sua saúde é a nossa prioridade.">
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. HEADER / NAV -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="img/logo_footer.webp" alt="Hospital Dia Logo" style="height: 50px;">
+            </a>
+
+            <nav class="nav-links">
+                <a href="#diferenciais">O Hospital</a>
+                <a href="#estrutura">Estrutura</a>
+                <a href="#corpo-clinico">Especialidades</a>
+                <a href="#exames">Exames</a>
+                <a href="#procedimentos">Cirurgias</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="ph ph-whatsapp-logo"></i> Entrar em contato
+                </a>
+                <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <button class="close-menu-btn" aria-label="Fechar Menu">
+                    <i class="ph ph-x"></i>
+                </button>
+                <nav class="mobile-links">
+                    <a href="#diferenciais">O Hospital</a>
+                    <a href="#estrutura">Estrutura</a>
+                    <a href="#corpo-clinico">Especialidades</a>
+                    <a href="#exames">Exames</a>
+                    <a href="#procedimentos">Cirurgias</a>
+                </nav>
+                <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-primary w-full"><i
+                        class="ph ph-whatsapp-logo"></i> Agendar WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="inicio">
+        <!-- Decoration Elements -->
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <div class="badge-tag">
+                    <i class="ph-fill ph-shield-check"></i> Referência Regional em Saúde
+                </div>
+
+                <h1 class="hero-title">
+                    Cuidar da sua saúde<br>
+                    é a nossa <span class="highlight">prioridade.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Hospital Dia com foco em cirurgias. Mais de 40 médicos especialistas, 24 especialidades médicas.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="ph ph-whatsapp-logo"></i> Agendar WhatsApp
+                    </a>
+                    <a href="#estrutura" class="btn btn-secondary btn-lg">Conheça nossa Estrutura</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISOR: Onda suave Hero -> Diferenciais -->
+    <div class="section-divider divider-wave-down" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc" />
+        </svg>
+    </div>
+
+    <!-- 3. DIFERENCIAIS -->
+    <section class="features-section" id="diferenciais">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="section-badge">Um hospital pensado para você.</span>
+                <h2>Por que nos escolher?</h2>
+                <p>Do diagnóstico à recuperação, oferecemos uma estrutura completa de atendimento ambulatorial e
+                    cirúrgico com humanização em cada etapa do cuidado.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="icon-img-box">
+                        <img src="img/por_que_nos_escolher/img_doctors.webp" alt="Corpo Clínico" loading="lazy">
+                    </div>
+                    <h3>Corpo Clínico de Excelência</h3>
+                    <p>Mais de <strong>40 médicos especialistas</strong> selecionados criteriosamente, comprometidos com
+                        o atendimento humanizado e os mais altos padrões.</p>
+                </div>
+
+                <div class="feature-card fade-up" style="transition-delay: 100ms;">
+                    <div class="icon-img-box">
+                        <img src="img/por_que_nos_escolher/img_surgical.webp" alt="Centro Cirúrgico" loading="lazy">
+                    </div>
+                    <h3>Bloco Cirúrgico Completo</h3>
+                    <p>Estrutura equipada para realizar mais de <strong>20 tipos de procedimentos</strong>, com
+                        segurança e tecnologia avançada em cada etapa.</p>
+                </div>
+
+                <div class="feature-card fade-up" style="transition-delay: 200ms;">
+                    <div class="icon-img-box">
+                        <img src="img/por_que_nos_escolher/img_heart.webp" alt="Diagnóstico" loading="lazy">
+                    </div>
+                    <h3>Diagnósticos Precisos</h3>
+                    <p>Exames realizados com equipamentos de última geração, garantindo <strong>resultados rápidos e
+                            confiáveis</strong>.</p>
+                </div>
+
+                <div class="feature-card fade-up" style="transition-delay: 300ms;">
+                    <div class="icon-img-box">
+                        <img src="img/por_que_nos_escolher/img_clock.webp" alt="Agilidade" loading="lazy">
+                    </div>
+                    <h3>Agilidade no Atendimento</h3>
+                    <p>Modelo Hospital Dia: consulta, exame e cirurgia no mesmo dia. <strong>Você resolve sua saúde e
+                            volta para casa.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISOR: Diagonal Diferenciais -> Estrutura -->
+    <div class="section-divider divider-diagonal" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,0 1440,60 1440,60 0,60" fill="#f8fafc" />
+        </svg>
+    </div>
+
+    <!-- 4. ESTRUTURA (CARROSSEL) -->
+    <section class="structure-section bg-gray" id="estrutura">
+        <div class="container">
+            <div class="structure-grid">
+                <div class="structure-text fade-up">
+                    <h2>Estrutura do Hospital Dia</h2>
+                    <p class="lead"><strong>Atendimento que acolhe e cuida.</strong></p>
+                    <p>Nossa recepção foi planejada para oferecer o máximo de conforto desde o primeiro contato. No
+                        Hospital Dia, acreditamos que o bem-estar começa em um ambiente aconchegante e um atendimento
+                        atencioso.</p>
+                    <p>Combinamos tecnologia de ponta com um olhar humanizado, garantindo que sua jornada conosco seja
+                        tranquila, ágil e focada na sua recuperação.</p>
+                </div>
+
+                <div class="structure-gallery fade-up">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="gallery-track">
+                            <!-- Placeholder premium images indicating structure/reception. Can be replaced with actual photos -->
+                            <div class="carousel-slide">
+                                <div class="image-placeholder"
+                                    style="background-image: url('img/estrutura/captura_de_tela_2026-04-12_185829.webp');">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image-placeholder"
+                                    style="background-image: url('img/estrutura/captura_de_tela_2026-04-12_185102.webp');">
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image-placeholder"
+                                    style="background-image: url('img/estrutura/captura_de_tela_2026-04-12_185838.webp');">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev-btn" id="prev-gallery"><i
+                                    class="ph ph-caret-left"></i></button>
+                            <div class="carousel-dots" id="gallery-dots"></div>
+                            <button class="carousel-btn next-btn" id="next-gallery"><i
+                                    class="ph ph-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ESPECIALIDADES MÉDICAS (ACCORDIONS) -->
+    <section class="specialists-section" id="corpo-clinico">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="section-badge">Corpo Clínico</span>
+                <h2>Nossas Especialidades e Médicos</h2>
+                <p>Profissionais qualificados e prontos para oferecer o melhor diagnóstico e tratamento.</p>
+            </div>
+
+            <div class="specialists-grid fade-up">
+                <!-- ACCORDION COL 1 -->
+                <div class="accordion-group">
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">Anestesiologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. José Henrique de Castro Antunes</strong><br><span>CRM MG 66687 / RQE
+                                        55461</span></li>
+                                <li><strong>Dr. Luiz Tostes</strong><br><span>CRM MG 56651 / RQE 38876</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Angiologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Henrique Ribeiro Lima</strong><br><span>CRM MG 42810 / RQE 24427</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Cardiologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Danielle Alencar</strong><br><span>CRM MG 56373 / RQE 42148</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Cirurgia Geral & Pediátrica <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Giovani Antônio da Fonseca</strong><br><span>CRM MG 18401 / RQE
+                                        38133</span></li>
+                                <li><strong>Dr. Lucas Brandão Alves</strong><br><span>CRM MG 82145</span></li>
+                                <li><strong>Dr. Victor Luis Ribeiro Vilas Boas</strong><br><span>CRM MG 57639 / RQE
+                                        40102 / RQE 50273</span></li>
+                                <li><strong>Dr. Cassio Costa</strong> (Pediátrica)<br><span>CRM MG 21769 / RQE
+                                        22101</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Cirurgia Vascular <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Henrique Ribeiro Lima</strong><br><span>CRM MG 42810 / RQE 24427</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Clínica Médica e Geral <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Ana Clara Ciriaco Lima</strong><br><span>CRM MG 75065</span></li>
+                                <li><strong>Dr. Alysson Guilherme L. de Oliveira</strong><br><span>CRM MG 49068</span>
+                                </li>
+                                <li><strong>Dra. Luana Antunes</strong><br><span>CRM MG 74865 / RQE 48972 / RQE
+                                        53418</span></li>
+                                <li><strong>Dr. Giovani Antônio da Fonseca</strong><br><span>CRM MG 18401 / RQE
+                                        38133</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Dermatologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Gláuria Ilusca Cordeiro Martins</strong><br><span>CRM MG 66246</span>
+                                </li>
+                                <li><strong>Dra. Raissa Almeida</strong><br><span>CRM MG 81387</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Endocrinologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Ana Clara Ciriaco Lima</strong><br><span>CRM MG 75065</span></li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- ACCORDION COL 2 -->
+                <div class="accordion-group">
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Gastroenterologia e Hepatologia <i
+                                class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Caroline Dias</strong><br><span>CRM MG 81240 / RQE 61988</span></li>
+                                <li><strong>Dr. Edivan Fernandes Frota Filho</strong><br><span>CRM MG 66128 / RQE
+                                        57117</span></li>
+                                <li><strong>Dra. Luana Antunes Silqueira Neves</strong><br><span>CRM MG 74865 / RQE
+                                        53418 (Gastro & Hepato)</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Ginecologia e Obstetrícia <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Anderson Ruas</strong><br><span>CRM MG 58992 / RQE 67124</span></li>
+                                <li><strong>Dra. Ilma Antunes</strong><br><span>CRM MG 71804 / RQE 57768</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Hematologia e Nefrologia <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Isabelle Almeida</strong> (Hematologia)<br><span>CRM MG 77392 / RQE
+                                        61260</span></li>
+                                <li><strong>Dr. João Pedro</strong> (Nefrologia)<br><span>CRM MG 79557 / RQE
+                                        61959</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Neurocirurgia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Andrey Juliano Alencar Silva</strong><br><span>CRM MG 61126 / RQE
+                                        48884</span></li>
+                                <li><strong>Dr. Bruno Lacerda Sandes</strong><br><span>CRM MG 55236 / RQE 92702</span>
+                                </li>
+                                <li><strong>Dr. Francisco Patrus</strong></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Nutrição & Transplante Capilar <i
+                                class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dra. Mariana Nogueira</strong> (Nutrição)<br><span>CRM MG 81813</span></li>
+                                <li><strong>Dra. Renata Jabbur</strong> (Transplante Capilar)<br><span>CRM MG
+                                        87005</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Oftalmologia <i class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Higor Ribeiro</strong><br><span>CRM MG 69819 / RQE 52626</span></li>
+                                <li><strong>Dr. Yan Barbosa</strong><br><span>CRM MG 68195</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Ortopedia, Pediatria e Otorrinolaringologia <i
+                                class="ph ph-caret-down"></i></summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Hugo Leonardo Vieira Mendes</strong> (Ortopedia)<br><span>CRM MG 64039 /
+                                        RQE 47005</span></li>
+                                <li><strong>Dr. Luiz Felipe Ferreira Rocha</strong> (Ortopedia)<br><span>CRM MG 66523 /
+                                        RQE 47848</span></li>
+                                <li><strong>Dr. Nicholas Koga</strong> (Ortopedia)<br><span>CRM MG 78411 / RQE
+                                        58370</span></li>
+                                <li><strong>Dra. Luana Pires</strong> (Pediatria)<br><span>CRM MG 82744 / RQE
+                                        61804</span></li>
+                                <li><strong>Dr. Luís Eduardo</strong> (Otorrino)<br><span>CRM MG 76157 / RQE
+                                        58073</span></li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Proctologia e Urologia <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Dr. Alysson Guilherme L. de Oliveira</strong> (Proctolo.)<br><span>CRM MG
+                                        49068</span></li>
+                                <li><strong>Dr. Victor Luis Ribeiro Vilas Boas</strong> (Urologia)<br><span>CRM MG 57639
+                                        / RQE 40102 / RQE 50273</span></li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. EXAMES E DIAGNÓSTICOS -->
+    <section class="exams-section bg-gray" id="exames">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <h2>Exames e Diagnósticos</h2>
+                <p>Equipamentos de ponta e protocolos rigorosos para resultados precisos sem sair do hospital.</p>
+            </div>
+
+            <div class="cards-grid fade-up">
+                <!-- Foto Card: Cardio -->
+                <div class="info-card info-card--photo">
+                    <div class="card-image-top">
+                        <img src="img/exames_diagnosticos/gemini_generated_image_rop9sbrop9sbrop9.webp"
+                            alt="Exames Cardiológicos">
+                    </div>
+                    <div class="card-body">
+                        <h3>Cardiológicos</h3>
+                        <p>Eletrocardiograma (ECG), Holter 24h, MAPA 24h, Ecocardiograma com Strain.</p>
+                    </div>
+                </div>
+
+                <!-- Foto Card: Endoscopia -->
+                <div class="info-card info-card--photo">
+                    <div class="card-image-top">
+                        <img src="img/exames_diagnosticos/gemini_generated_image_p0g4orp0g4orp0g4.webp"
+                            alt="Exames Endoscópicos">
+                    </div>
+                    <div class="card-body">
+                        <h3>Endoscópicos</h3>
+                        <p>Endoscopia Digestiva Alta, Colonoscopia, Retossigmoidoscopia, Videonasoscopia.</p>
+                    </div>
+                </div>
+
+                <!-- Foto Card: Ultrassom -->
+                <div class="info-card info-card--photo">
+                    <div class="card-image-top">
+                        <img src="img/exames_diagnosticos/gemini_generated_image_s8hzcas8hzcas8hz.webp"
+                            alt="Ultrassonografias">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ultrassonografias</h3>
+                        <p>Abdômen Total, Endovaginal, Mamas, Próstata, Tireoide, Pélvica e Obstétrica.</p>
+                    </div>
+                </div>
+
+                <!-- Foto Card: Biópsias -->
+                <div class="info-card info-card--photo">
+                    <div class="card-image-top">
+                        <img src="img/exames_diagnosticos/gemini_generated_image_bcqy00bcqy00bcqy.webp"
+                            alt="Biópsias e Diagnósticos">
+                    </div>
+                    <div class="card-body">
+                        <h3>Outros e Biópsias</h3>
+                        <p>Punções Guiadas de Tireoide, Biópsia de Mama, Próstata e exames laboratoriais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISOR: Curva dupla Exames -> Procedimentos -->
+    <div class="section-divider divider-double-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff" />
+        </svg>
+    </div>
+
+    <!-- 7. PROCEDIMENTOS E CIRURGIAS -->
+    <section class="procedures-section" id="procedimentos">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="section-badge">Hospital Dia</span>
+                <h2>Procedimentos e Cirurgias</h2>
+                <p>Nossa estrutura permite que você realize o procedimento e retorne para casa no mesmo dia.</p>
+            </div>
+
+            <div class="procedures-layout">
+                <!-- Foto Card: Pequenos Procedimentos -->
+                <div class="info-card info-card--photo fade-up">
+                    <div class="card-image-top">
+                        <img src="img/procedimento_e_cirurgias/gemini_generated_image_1reb0f1reb0f1reb.webp"
+                            alt="Pequenos Procedimentos">
+                    </div>
+                    <div class="card-body">
+                        <h3>Pequenos Procedimentos</h3>
+                        <ul class="list-check">
+                            <li>Inserção/Retirada de DIU e Implanon</li>
+                            <li>Escleroterapia de Varizes</li>
+                            <li>Drenagem de Abscesso e Infiltrações</li>
+                            <li>Lavagem Anatômica de Ouvido</li>
+                            <li>Polipectomia e Remoção de Corpos Estranhos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Foto Card Destaque: Bloco Cirúrgico -->
+                <div class="info-card info-card--photo info-card--featured fade-up" style="transition-delay: 100ms;">
+                    <div class="card-image-top">
+                        <img src="img/procedimento_e_cirurgias/gemini_generated_image_9xx1609xx1609xx1.webp"
+                            alt="Bloco Cirúrgico">
+                    </div>
+                    <div class="card-body">
+                        <h3>Bloco Cirúrgico (8 Espec.)</h3>
+                        <ul class="list-check">
+                            <li>Cirurgia Geral e Ginecológica</li>
+                            <li>Cirurgia Ortopédica e Vascular</li>
+                            <li>Cirurgia Urológica e Proctológica</li>
+                            <li>Cirurgia Plástica</li>
+                            <li>Cirurgia de Otorrinolaringologia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Foto Card: Ortopedia -->
+                <div class="info-card info-card--photo fade-up" style="transition-delay: 200ms;">
+                    <div class="card-image-top">
+                        <img src="img/procedimento_e_cirurgias/gemini_generated_image_lqjbnqlqjbnqlqjb.webp"
+                            alt="Ortopedia Rápida">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ortopedia Rápida</h3>
+                        <ul class="list-check">
+                            <li>Bota Gessada com Redução</li>
+                            <li>Gesso Axilo-Palmar (Com Redução)</li>
+                            <li>Redução Articular de Ombro</li>
+                            <li>Liberação de Dedo em Gatilho</li>
+                            <li>Tratamento de Pé Torto Congênito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CONVÊNIOS (CARROSSEL INFINITO) -->
+    <section class="insurance-section">
+        <div class="container">
+            <div class="section-header center fade-up" style="margin-bottom: 20px;">
+                <span class="section-badge">Parcerias de Confiança</span>
+                <h2>Convênios que Aceitamos</h2>
+            </div>
+
+            <div class="insurance-container fade-up">
+                <button class="carousel-btn prev-btn" id="prev-insurance"><i class="ph ph-caret-left"></i></button>
+
+                <div class="insurance-track-wrapper">
+                    <div class="insurance-track" id="insurance-track">
+                        <!-- Logos reais dos convênios -->
+                        <div class="insurance-logo"><img src="img/convenios/captura_de_tela_2026-04-12_180755.webp"
+                                alt="Convênio 1"></div>
+                        <div class="insurance-logo"><img
+                                src="img/convenios/captura_de_tela_2026-04-12_191042-removebg-preview.webp"
+                                alt="Convênio 2"></div>
+                        <div class="insurance-logo"><img src="img/convenios/captura_de_tela_2026-04-12_180804.webp"
+                                alt="Convênio 3"></div>
+                        <div class="insurance-logo"><img src="img/convenios/captura_de_tela_2026-04-12_180809.webp"
+                                alt="Convênio 4"></div>
+                        <div class="insurance-logo"><img src="img/convenios/captura_de_tela_2026-04-12_180814.webp"
+                                alt="Convênio 5"></div>
+                        <div class="insurance-logo"><img src="img/convenios/captura_de_tela_2026-04-12_180820.webp"
+                                alt="Convênio 6"></div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" id="next-insurance"><i class="ph ph-caret-right"></i></button>
+
+                <div class="carousel-dots" id="insurance-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. PERGUNTAS FREQUENTES (FAQ) -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header center fade-up">
+                <span class="section-badge">Dúvidas Frequentes</span>
+                <h2>Perguntas Frequentes</h2>
+                <p>Tudo o que você precisa saber sobre o atendimento no Hospital Dia.</p>
+            </div>
+
+            <div class="faq-container fade-up">
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>O Hospital Dia atende particular e convênios?</summary>
+                        <div class="faq-answer">
+                            Sim, atendemos pacientes particulares e possuímos parcerias com os principais convênios
+                            médicos da região. Para saber se o seu plano cobre um procedimento específico, entre em
+                            contato conosco.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>É necessário acompanhante para todos os procedimentos?</summary>
+                        <div class="faq-answer">
+                            Sim. Por segurança e exigência técnica, para todos os procedimentos que envolvam qualquer
+                            tipo de sedação ou anestesia, é obrigatória a presença de um acompanhante maior de idade
+                            desde a admissão até a alta.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Quais documentos devo levar no dia da cirurgia?</summary>
+                        <div class="faq-answer">
+                            Você deve trazer um documento original com foto (RG ou CNH), CPF, a carteirinha do seu
+                            convênio e todos os exames pré-operatórios e laudos médicos relacionados ao seu
+                            procedimento.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Como funciona a alta no modelo Hospital Dia?</summary>
+                        <div class="faq-answer">
+                            O modelo Hospital Dia permite que você realize seu procedimento e receba alta no mesmo dia.
+                            Após a cirurgia, você passará por um período de observação e recuperação monitorada por
+                            nossa equipe e, estando estável, poderá retornar para casa.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Preciso estar em jejum para realizar exames?</summary>
+                        <div class="faq-answer">
+                            O jejum depende do tipo de exame. Exames de sangue de rotina geralmente exigem 8 a 12 horas,
+                            enquanto ultrassonografias e endoscopias têm protocolos específicos. Você receberá todas as
+                            orientações detalhadas no momento do agendamento.
+                        </div>
+                    </details>
+
+                    <!-- Novas Perguntas -->
+                    <details class="faq-item">
+                        <summary>Quais as formas de pagamento para procedimentos particulares?</summary>
+                        <div class="faq-answer">
+                            Aceitamos cartões de crédito (com parcelamento em até 10x sem juros dependendo do valor),
+                            débito, PIX e transferências bancárias. Oferecemos condições especiais para facilitar o
+                            acesso à sua saúde.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>O hospital possui estacionamento para pacientes?</summary>
+                        <div class="faq-answer">
+                            Sim, dispomos de estacionamento próprio e seguro para nossos pacientes e acompanhantes,
+                            garantindo tranquilidade durante todo o tempo de permanência no Hospital Dia.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Como faço para agendar uma consulta ou procedimento?</summary>
+                        <div class="faq-answer">
+                            O agendamento é rápido e prático. Você pode agendar diretamente pelo nosso WhatsApp (link no
+                            topo da página), pelo formulário de contato abaixo ou ligando para nossa central de
+                            atendimento.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA CENTRAL & FOOTER -->
+    <section class="cta-banner">
+        <div class="container cta-container fade-up">
+            <h2>Sua saúde não pode esperar.</h2>
+            <p>Converse com nosso atendimento agora e tenha respostas rápidas.</p>
+            <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-white btn-lg mt-4">
+                <i class="ph ph-whatsapp-logo"></i> Chamar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-box mb-4">
+                    <img src="img/logo_brand_footer.webp" alt="Hospital Dia" style="height: 60px;">
+                </div>
+                <p>Cuidar da sua saúde é a nossa prioridade. Hospital Dia com foco em cirurgias e atendimento
+                    especializado de alta qualidade.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Acesso Rápido</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#diferenciais">O Hospital</a></li>
+                    <li><a href="#corpo-clinico">Corpo Clínico</a></li>
+                    <li><a href="#exames">Exames e Procedimentos</a></li>
+                    <li><a href="#faq">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato e Horários</h4>
+                <ul>
+                    <li><i class="ph ph-phone"></i> <strong>Entre em contato: (38) 3821-1350</strong></li>
+                    <li><i class="ph ph-whatsapp-logo"></i> <strong>(38) 99210-1212</strong></li>
+                    <li><i class="ph ph-map-pin"></i> R. São João da Ponte, 417 - Centro, Janaúba - MG</li>
+                    <li><i class="ph ph-clock"></i> Seg a Sex: 07h às 18h | Sáb: 07h às 12h</li>
+                </ul>
+            </div>
+
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.948361929384!2d-43.306374!3d-15.806676599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x753d0412009ce69%3A0x405f9514dfb1352a!2sHospital%20Dia%20Dr.%20Giovani!5e0!3m2!1spt-BR!2sbr!4v1776032351476!5m2!1spt-BR!2sbr"
+                    width="100%" height="150" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Hospital Dia. Todos os direitos reservados.</p>
+                <div class="footer-legal-links">
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                    <span class="separator">|</span>
+                    <a href="politicas-de-privacidade.html">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

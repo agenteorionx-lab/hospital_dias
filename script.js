@@ -168,15 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 6. Accordion Exclusive Logic (Unified for Specialties and FAQ)
-    document.querySelectorAll('details').forEach((targetDetail) => {
-        targetDetail.addEventListener('click', (e) => {
-            // Only trigger if we are opening it
-            if (!targetDetail.open) {
-                const group = targetDetail.closest('.accordion-group') || targetDetail.closest('.faq-list');
+    const accordions = document.querySelectorAll('details');
+    
+    // Abrir todos no mobile ao carregar
+    if (window.innerWidth <= 768) {
+        accordions.forEach(acc => acc.setAttribute('open', ''));
+    }
+
+    accordions.forEach(acc => {
+        acc.addEventListener('toggle', () => {
+            // No desktop, mantemos o comportamento de fechar os outros
+            // No mobile, permitimos que todos fiquem abertos se o usuário quiser
+            if (acc.open && window.innerWidth > 768) {
+                const group = acc.closest('.accordion-group') || acc.closest('.faq-list');
                 const others = group ? group.querySelectorAll('details') : document.querySelectorAll('details');
                 
                 others.forEach((detail) => {
-                    if (detail !== targetDetail && detail.open) {
+                    if (detail !== acc && detail.open) {
                         detail.removeAttribute('open');
                     }
                 });

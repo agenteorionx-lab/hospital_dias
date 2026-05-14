@@ -142,6 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
         desktop: 4, tablet: 3, mobile: 2
     });
 
+    // Initialize Specialties Carousel
+    initCarousel('spec-track', 'spec-next', 'spec-prev', 'spec-dots', {
+        desktop: 2, tablet: 1, mobile: 1
+    });
+
+    // Initialize Procedures Carousel
+    initCarousel('proc-track', 'proc-next', 'proc-prev', 'proc-dots', {
+        desktop: 3, tablet: 2, mobile: 1
+    });
+
     // 6. Accordion Exclusive Logic (Unified for Specialties and FAQ)
     document.querySelectorAll('details').forEach((targetDetail) => {
         targetDetail.addEventListener('click', (e) => {

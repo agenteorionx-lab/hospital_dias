@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades | Hospital Dia</title>
+    <meta name="description" content="Conheça todas as especialidades médicas e nosso corpo clínico completo.">
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+            text-align: center;
+        }
+        .specialists-section {
+            padding: 60px 0 100px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. HEADER / NAV -->
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="img/logo_footer.png" alt="Hospital Dia Logo" style="height: 50px;">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="especialidades.html">Especialidades</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="quem-somos.html">O Hospital</a>
+                <a href="index.html#faq">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="ph ph-whatsapp-logo"></i> Entrar em contato
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <a href="index.html" class="back-link"><i class="ph ph-arrow-left"></i> Voltar para o Início</a>
+                <span class="section-badge">Corpo Clínico Completo</span>
+                <h1>Todas as Nossas Especialidades</h1>
+                <p>Confira a lista completa de profissionais e especialidades disponíveis no Hospital Dia.</p>
+            </div>
+        </section>
+
+        <!-- ESPECIALIDADES MÉDICAS (FULL LIST) -->
+        <section class="specialists-section">
+            <div class="container">
+                <div class="specialists-grid">
+                    <!-- ACCORDION COL 1 -->
+                    <div class="accordion-group">
+                        <details class="accordion-item" open>
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-syringe"></i> Anestesiologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dra. Daniela Carvalho de Sá</strong><br><span>CRM MG 54372 / RQE 53177</span></li>
+                                    <li><strong>Dr. José Henrique Castro Antunes</strong><br><span>CRM MG 66687 / RQE 61126</span></li>
+                                    <li><strong>Dra. Luisa Soares Muylaert Barroso</strong><br><span>CRM MG 83811</span></li>
+                                    <li><strong>Dr. André Santos e Jenes</strong><br><span>CRM MG 57692 / RQE 41802</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-activity"></i> Angiologia e Vascular</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Henrique Ribeiro Lima</strong><br><span>CRM MG 42810 / RQE 24427</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-heart-beat"></i> Cardiologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dra. Danielle Alencar Pereira</strong><br><span>CRM MG 56373 / RQE 42148</span></li>
+                                    <li><strong>Dr. Hugo Freitas Barros</strong><br><span>CRM MG 64113 / RQE 50819</span></li>
+                                    <li><strong>Dra. Eila Pinto Magalhães</strong><br><span>CRM MG 75959 / RQE 58037</span></li>
+                                    <li><strong>Dr. Rosemberg dos Anjos Medeiros Filho</strong><br><span>CRM MG 78880</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-first-aid"></i> Cirurgia Geral e Gastro</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Giovani Antônio da Fonseca</strong><br><span>CRM MG 18401 / RQE 38133</span></li>
+                                    <li><strong>Dr. Lucas Brandão Alves</strong><br><span>CRM MG 82145</span></li>
+                                    <li><strong>Dr. Luiz Carlos Souza Tostes</strong><br><span>CRM MG 56651 / RQE 38376</span></li>
+                                    <li><strong>Dra. Caroline Sousa Dias</strong><br><span>CRM MG 81240 / RQE 61988</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-stethoscope"></i> Clínica Médica e Especialidades</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Alysson Guilherme Lopes de Oliveira</strong><br><span>CRM MG 49066</span></li>
+                                    <li><strong>Dr. Waldomiro Luciago Oliveira Junior</strong><br><span>CRM MG 89258 (Reumatologia)</span></li>
+                                    <li><strong>Dra. Ana Clara Ciriaco Lima</strong><br><span>CRM MG 75065</span></li>
+                                    <li><strong>Dra. Gabriela Gusmão</strong><br><span>CRM MG 84773 (Geriatria / Família)</span></li>
+                                    <li><strong>Dr. Rafael Lopes Nogueira Guimarães</strong><br><span>CRM 225013 (Alergista)</span></li>
+                                    <li><strong>Dra. Scárllety Karenn Mendes Oliveira</strong><br><span>CRM MG 81255 (Pneumologista)</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-sparkle"></i> Dermatologia e Plástica</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Roney Campos</strong><br><span>CRM MG 23989 / RQE 50273 (Plástica)</span></li>
+                                    <li><strong>Dra. Glauria Ilusca Cordeiro Martins</strong><br><span>CRM MG 66246</span></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- ACCORDION COL 2 -->
+                    <div class="accordion-group">
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-gender-female"></i> Ginecologia e Obstetrícia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Anderson Marciano Ruas Lopes</strong><br><span>CRM MG 189078 / RQE 189078</span></li>
+                                    <li><strong>Dra. Maria Clara Soares Barbosa Campolina</strong><br><span>CRM MG 91786</span></li>
+                                    <li><strong>Dra. Katarini Fernanda Gomes</strong><br><span>CRM MG 88822</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-drop"></i> Hematologia e Nefrologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. João Pedro Barbosa Alcântara</strong><br><span>CRM MG 79557 / RQE 61959</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-brain"></i> Neurologia e Neurocirurgia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Francisco Patrus Ananias Pires</strong><br><span>CRM MG 75066 / RQE 57279</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-bone"></i> Ortopedia e Traumatologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Hugo Leonardo Vieira Mendes</strong><br><span>CRM MG 64039 / RQE 47005</span></li>
+                                    <li><strong>Dr. Luiz Felipe Ferreira Rocha</strong><br><span>CRM MG 66523 / RQE 47848</span></li>
+                                    <li><strong>Dr. Nicholas Hideki Koga Magario</strong><br><span>CRM MG 78411 / RQE 58370</span></li>
+                                    <li><strong>Dr. Caio Henrique Santana Damasceno</strong><br><span>CRM MG 91553</span></li>
+                                    <li><strong>Dr. Elisson Magno da Silva</strong><br><span>CRM MG 6455</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-ear"></i> Otorrinolaringologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Luis Eduardo Ribeiro Coelho</strong><br><span>CRM MG 76157 / RQE 58073</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-baby"></i> Pediatria e Psiquiatria</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dr. Cassio Costa</strong><br><span>CRM MG 21769 / RQE 22101 (Pediatra)</span></li>
+                                    <li><strong>Dra. Jardenia Lima Macedo Silva</strong><br><span>CRM MG 65507 / RQE 60409 (Ped. e Psiq.)</span></li>
+                                    <li><strong>Dr. Uelcio Moreira Cangussu Filho</strong><br><span>CRM 026348BA (Psiquiatria)</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-shield-plus"></i> Proctologia e Urologia</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dra. Isabela Thayna Antunes Dias</strong><br><span>CRM MG 81317 / RQE 63183 (Coloprocto)</span></li>
+                                    <li><strong>Dr. Thiery Vinicius Flores Silva</strong><br><span>CRM MG 71569 / RQE 53959 (Urologia)</span></li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                <span><i class="ph ph-users-three"></i> Saúde Mental e Terapias</span>
+                                <i class="ph ph-caret-down"></i>
+                            </summary>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><strong>Dra. Amanda Moreira Almeida Coelho</strong><br><span>Psicóloga</span></li>
+                                    <li><strong>Dra. Maria de Fátima Araújo Soares Barros</strong><br><span>Terapeuta</span></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-box mb-4">
+                    <img src="img/logo_brand_footer.png" alt="Hospital Dia" style="height: 60px;">
+                </div>
+                <p>Cuidar da sua saúde é a nossa prioridade. Hospital Dia com foco em cirurgias e atendimento especializado de alta qualidade.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <ul>
+                    <li><i class="ph ph-phone"></i> (38) 3821-1350</li>
+                    <li><i class="ph ph-map-pin"></i> R. São João da Ponte, 417 - Centro, Janaúba - MG</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Hospital Dia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

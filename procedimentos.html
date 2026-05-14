@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos e Exames | Hospital Dia</title>
+    <meta name="description" content="Lista completa de cirurgias, procedimentos e exames diagnósticos.">
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            text-align: center;
+        }
+        .procedures-section {
+            padding: 60px 0 100px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-blue-light);
+            color: var(--primary-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. HEADER / NAV -->
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="img/logo_footer.png" alt="Hospital Dia Logo" style="height: 50px;">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="especialidades.html">Especialidades</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="quem-somos.html">O Hospital</a>
+                <a href="index.html#faq">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/5538992101212" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="ph ph-whatsapp-logo"></i> Entrar em contato
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <a href="index.html" class="back-link"><i class="ph ph-arrow-left"></i> Voltar para o Início</a>
+                <span class="section-badge">Catálogo de Serviços</span>
+                <h1>Procedimentos, Cirurgias e Exames</h1>
+                <p>Confira a lista detalhada de todos os serviços médicos disponíveis em nossa unidade.</p>
+            </div>
+        </section>
+
+        <section class="procedures-section">
+            <div class="container">
+                
+                <h2 class="category-title"><i class="ph ph-stethoscope"></i> Exames e Diagnósticos</h2>
+                <div class="procedures-grid">
+                    <!-- 1. CARDIOLÓGICOS -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-heart-beat"></i></div>
+                        <h3>Exames Cardiológicos</h3>
+                        <p>Tecnologia avançada para monitoramento e diagnóstico preciso da saúde do seu coração.</p>
+                        <ul class="list-check-sm">
+                            <li>Eletrocardiograma (ECG)</li>
+                            <li>Holter 24h e MAPA 24h</li>
+                            <li>Ecocardiograma com Strain</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. ENDOSCÓPICOS -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-magnifying-glass"></i></div>
+                        <h3>Exames Endoscópicos</h3>
+                        <p>Procedimentos minimamente invasivos para visualização e tratamento do trato digestivo e respiratório.</p>
+                        <ul class="list-check-sm">
+                            <li>Endoscopia Digestiva Alta</li>
+                            <li>Colonoscopia e Polipectomia</li>
+                            <li>Retossigmoidoscopia</li>
+                            <li>Videonasoscopia</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. ULTRASSONOGRAFIAS -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-pulse"></i></div>
+                        <h3>Ultrassonografias</h3>
+                        <p>Diagnóstico por imagem versátil e seguro para acompanhamento de diversas condições de saúde.</p>
+                        <ul class="list-check-sm">
+                            <li>Abdômen Total e Pélvica</li>
+                            <li>Endovaginal e Obstétrica</li>
+                            <li>Mamas, Próstata e Tireoide</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. BIÓPSIAS -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-microscope"></i></div>
+                        <h3>Biópsias e Laboratório</h3>
+                        <p>Coleta de materiais e análises laboratoriais completas com foco em agilidade e precisão.</p>
+                        <ul class="list-check-sm">
+                            <li>Punções Guiadas (Tireoide)</li>
+                            <li>Biópsia de Mama e Próstata</li>
+                            <li>Laboratório de Análises Clínicas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="category-title"><i class="ph ph-first-aid"></i> Cirurgias e Procedimentos</h2>
+                <div class="procedures-grid">
+                    <!-- 5. CIRURGIA GERAL -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-first-aid"></i></div>
+                        <h3>Cirurgia Geral</h3>
+                        <p>Equipe especializada em intervenções abdominais e procedimentos de rotina cirúrgica.</p>
+                        <ul class="list-check-sm">
+                            <li>Vesícula (Vídeo e Aberta)</li>
+                            <li>Hérnias (Umbilical, Inguinal, etc)</li>
+                            <li>Exerese de Cistos e Lipomas</li>
+                            <li>Pequenas Cirurgias e Suturas</li>
+                        </ul>
+                    </div>
+
+                    <!-- 6. GINECOLOGIA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-gender-female"></i></div>
+                        <h3>Cirurgia Ginecologia</h3>
+                        <p>Cuidados específicos para a saúde feminina com as técnicas cirúrgicas mais modernas.</p>
+                        <ul class="list-check-sm">
+                            <li>Laqueadura (Vídeo e Normal)</li>
+                            <li>Ninfoplastia e Perineoplastia</li>
+                            <li>Miomectomia e Ooforectomia</li>
+                            <li>Nódulos de Mama</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7. ORTOPEDIA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-bone"></i></div>
+                        <h3>Cirurgia Ortopédica</h3>
+                        <p>Tratamentos cirúrgicos para articulações, ossos e tendões com rápida recuperação.</p>
+                        <ul class="list-check-sm">
+                            <li>Artroscopia (Joelho e Ombro)</li>
+                            <li>Túnel do Carpo</li>
+                            <li>Cisto Sinovial</li>
+                            <li>Retirada de Material de Síntese</li>
+                        </ul>
+                    </div>
+
+                    <!-- 8. PROCTOLOGIA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-shield-plus"></i></div>
+                        <h3>Proctologia</h3>
+                        <p>Especialidade voltada ao tratamento de condições colorretais com discrição e eficiência.</p>
+                        <ul class="list-check-sm">
+                            <li>Hemorroidectomia</li>
+                            <li>Ligadura Elástica</li>
+                            <li>Fistulectomia Anal</li>
+                            <li>Cisto Pilonidal</li>
+                        </ul>
+                    </div>
+
+                    <!-- 9. UROLOGIA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-drop-half-bottom"></i></div>
+                        <h3>Urologia</h3>
+                        <p>Soluções cirúrgicas para o sistema urinário masculino e feminino, incluindo saúde reprodutiva.</p>
+                        <ul class="list-check-sm">
+                            <li>Vasectomia (Sedação opcional)</li>
+                            <li>Fimose (Postectomia)</li>
+                            <li>Biópsias e RTU</li>
+                            <li>Hidrocele e Varicocele</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10. PEDIÁTRICA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-baby"></i></div>
+                        <h3>Cirurgia Pediátrica</h3>
+                        <p>Procedimentos cirúrgicos realizados com carinho e técnica específica para crianças.</p>
+                        <ul class="list-check-sm">
+                            <li>Hérnias e Fimose</li>
+                            <li>Frenectomia (Língua)</li>
+                            <li>Criptorquidia</li>
+                            <li>Alargamento vaginal</li>
+                        </ul>
+                    </div>
+
+                    <!-- 11. OTORRINO -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-ear"></i></div>
+                        <h3>Otorrinolaringologia</h3>
+                        <p>Cirurgias para correção de problemas respiratórios e de audição.</p>
+                        <ul class="list-check-sm">
+                            <li>Adenoide e Amígdalas</li>
+                            <li>Septoplastia (Desvio de Septo)</li>
+                            <li>Turbinectomia (Carne Crescida)</li>
+                        </ul>
+                    </div>
+
+                    <!-- 12. VASCULAR -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-activity"></i></div>
+                        <h3>Cirurgia Vascular</h3>
+                        <p>Tratamento de varizes e doenças do sistema circulatório com foco estético e funcional.</p>
+                        <ul class="list-check-sm">
+                            <li>Varicectomia Unilateral/Bilateral</li>
+                            <li>Escleroterapia e Espuma</li>
+                            <li>Tratamento Moderno de Varizes</li>
+                        </ul>
+                    </div>
+
+                    <!-- 13. OFTALMOLOGIA -->
+                    <div class="service-highlight-card">
+                        <div class="service-icon"><i class="ph ph-eye"></i></div>
+                        <h3>Oftalmologia</h3>
+                        <p>Cirurgias oculares de alta precisão para restauração da visão.</p>
+                        <ul class="list-check-sm">
+                            <li>Catarata (Facoemulsificação)</li>
+                            <li>Pterígio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-box mb-4">
+                    <img src="img/logo_brand_footer.png" alt="Hospital Dia" style="height: 60px;">
+                </div>
+                <p>Cuidar da sua saúde é a nossa prioridade. Hospital Dia com foco em cirurgias e atendimento especializado de alta qualidade.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <ul>
+                    <li><i class="ph ph-phone"></i> (38) 3821-1350</li>
+                    <li><i class="ph ph-map-pin"></i> R. São João da Ponte, 417 - Centro, Janaúba - MG</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Hospital Dia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

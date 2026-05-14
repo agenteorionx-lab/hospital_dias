@@ -110,7 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index < 0) index = totalPages - 1;
             else if (index >= totalPages) index = 0;
             
-            const movePercent = index * 100;
+            // Correção: O percentual de translação deve ser relativo ao tamanho total do track
+            const movePercent = (index * perPage * 100) / slides.length;
             track.style.transform = `translateX(-${movePercent}%)`;
             currentSlideIndex = index;
             
@@ -121,6 +122,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (nextBtn) nextBtn.addEventListener('click', () => goToPage(currentSlideIndex + 1));
         if (prevBtn) prevBtn.addEventListener('click', () => goToPage(currentSlideIndex - 1));
+
+        // Touch Support (Swipe)
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Swiped left
+                goToPage(currentSlideIndex + 1);
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                // Swiped right
+                goToPage(currentSlideIndex - 1);
+            }
+        }
 
         window.addEventListener('resize', () => {
             updatePerPage();
@@ -135,16 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Gallery Carousel
     initCarousel('gallery-track', 'next-gallery', 'prev-gallery', 'gallery-dots', {
         desktop: 1, tablet: 1, mobile: 1
-    });
-
-    // Initialize Insurance Carousel (Manual)
-    initCarousel('insurance-track', 'next-insurance', 'prev-insurance', 'insurance-dots', {
-        desktop: 4, tablet: 3, mobile: 2
-    });
-
-    // Initialize Specialties Carousel
-    initCarousel('spec-track', 'spec-next', 'spec-prev', 'spec-dots', {
-        desktop: 2, tablet: 1, mobile: 1
     });
 
     // Initialize Procedures Carousel

@@ -1895,10 +1895,13 @@ html, body {
 
 @media (max-width: 768px) {
     .services-highlight-grid.carousel-track .service-highlight-card {
-        flex: 0 0 100%;
+        flex: 0 0 100% !important;
     }
     .carousel-nav {
-        display: none !important;
+        display: flex !important;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1rem !important;
     }
 }
 

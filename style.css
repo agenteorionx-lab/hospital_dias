@@ -695,11 +695,15 @@ ul {
 
 .carousel-track {
     display: flex;
+    flex-wrap: nowrap;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .carousel-slide {
-    min-width: 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery-img {
@@ -1729,7 +1733,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .service-highlight-card:hover {
@@ -1741,8 +1745,8 @@ html, body {
 .service-icon {
     width: 70px;
     height: 70px;
-    background: rgba(0, 0, 0, 0.08);
-    color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1760,14 +1764,14 @@ html, body {
 
 .service-highlight-card h3 {
     font-size: 1.4rem;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 15px;
     font-family: var(--font-heading);
 }
 
 .service-highlight-card p {
     font-size: 0.95rem;
-    color: #333333;
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -1784,7 +1788,7 @@ html, body {
     position: relative;
     padding-left: 25px;
     font-size: 0.9rem;
-    color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -1794,7 +1798,7 @@ html, body {
     font-family: "Phosphor";
     position: absolute;
     left: 0;
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: bold;
 }
 /* ABOUT SUMMARY (MAIN PAGE) */

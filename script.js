@@ -110,9 +110,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index < 0) index = totalPages - 1;
             else if (index >= totalPages) index = 0;
             
-            // Correção: O percentual de translação deve ser relativo ao tamanho total do track
-            const movePercent = (index * perPage * 100) / slides.length;
-            track.style.transform = `translateX(-${movePercent}%)`;
+            // Medição ultra-robusta baseada no tamanho real do slide renderizado na tela
+            const slideWidth = slides[0] ? slides[0].getBoundingClientRect().width : 0;
+            
+            // Calcula o deslocamento total
+            let moveAmount = index * perPage * slideWidth;
+            
+            // Limita o deslocamento máximo para evitar exibir espaços vazios no final (como no carrossel de 3 itens)
+            const maxScroll = (slides.length - perPage) * slideWidth;
+            if (moveAmount > maxScroll && maxScroll > 0) {
+                moveAmount = maxScroll;
+            }
+            
+            track.style.transform = `translateX(-${moveAmount}px)`;
             currentSlideIndex = index;
             
             const dots = Array.from(dotsContainer.children);
@@ -150,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => {
             updatePerPage();
             buildDots();
-            goToPage(0);
+            goToPage(currentSlideIndex); // Recalcula a translação mantendo a página atual
         });
 
         updatePerPage();
